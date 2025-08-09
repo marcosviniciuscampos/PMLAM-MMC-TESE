@@ -1,0 +1,89 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started sex 13 dez 2024 15:32:22 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 4.4613657861950539e-09
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_hosp/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 1239695 rows, 833994 columns and 9386231 nonzeros
+Model fingerprint: 0x9ae7e3af
+Model has 650 quadratic constraints
+Variable types: 416676 continuous, 417318 integer (645 binary)
+Coefficient statistics:
+  Matrix range     [2e-03, 6e+07]
+  QMatrix range    [2e-03, 1e+06]
+  QLMatrix range   [1e+00, 1e+06]
+  Objective range  [1e+00, 4e+08]
+  Bounds range     [1e+00, 2e+08]
+  RHS range        [1e+00, 4e+07]
+  QRHS range       [2e-01, 2e-01]
+Presolve removed 2 rows and 3 columns (presolve time = 7s) ...
+Presolve removed 820308 rows and 405413 columns (presolve time = 10s) ...
+Presolve removed 1231648 rows and 825342 columns (presolve time = 16s) ...
+Presolve removed 1231645 rows and 825340 columns
+Presolve time: 16.01s
+Presolved: 12437 rows, 9999 columns, 3951785 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 645 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 2319 continuous, 7680 integer (647 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   4.822585e+04   0.000000e+00     49s
+     815    0.0000000e+00   0.000000e+00   0.000000e+00     49s
+
+Root relaxation: objective 0.000000e+00, 815 iterations, 1.47 seconds (0.32 work units)
+Total elapsed time = 49.58s (DegenMoves)
+Total elapsed time = 54.60s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  809          -    0.00000      -     -   55s
+     0     0    0.00000    0  620          -    0.00000      -     -   59s
+H    0     0                    2921746.9122    0.00000   100%     -   62s
+     0     0    0.00000    0  651 2921746.91    0.00000   100%     -   79s
+     0     0    0.00000    0  651 2921746.91    0.00000   100%     -   94s
+     0     2    0.00000    0  651 2921746.91    0.00000   100%     -  103s
+     1     3    0.00000    1  620 2921746.91    0.00000   100%   4.0  105s
+    14    16    0.00000    7  618 2921746.91    0.00000   100%   2.4  110s
+    22    32    0.00000    9  619 2921746.91    0.00000   100%   2.2  117s
+    32    46    0.00000   14  619 2921746.91    0.00000   100%   1.8  124s
+    46    88    0.00000   15  619 2921746.91    0.00000   100%   1.8  152s
+    88   165    0.00000   39  622 2921746.91    0.00000   100%   3.4 1379s
+   165   412    0.00000   82  827 2921746.91    0.00000   100%  14.6 1586s
+H  183   412                    2832768.6544    0.00000   100%  15.1 1587s
+H  186   412                    1631643.3280    0.00000   100%  15.0 1587s
+H  309   412                    1258517.8668    0.00000   100%  18.2 1587s
+H  418   678                    844622.94585    0.00000   100%  20.4 1772s
+   689   848    0.00000  202  625 844622.946    0.00000   100%  24.6 1893s
+H  812   848                    487864.93044    0.00000   100%  24.7 1893s
+   869  1068    0.00000  264  645 487864.930    0.00000   100%  24.9 2034s
+H  994   343                       0.0000000    0.00000  0.00%  25.0 2034s
+
+Cutting planes:
+  Gomory: 28
+  MIR: 130
+  StrongCG: 9
+
+Explored 1101 nodes (29652 simplex iterations) in 2038.70 seconds (322.84 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 7: 0 487865 844623 ... 2.92175e+06
+
+Optimal solution found (tolerance 4.46e-09)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%

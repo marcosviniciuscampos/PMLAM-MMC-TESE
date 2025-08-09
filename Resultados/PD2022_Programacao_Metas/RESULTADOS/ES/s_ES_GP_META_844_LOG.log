@@ -1,0 +1,86 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started ter 26 nov 2024 14:11:27 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 5.52890488975657e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_hosp/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 17920 rows, 12411 columns and 85319 nonzeros
+Model fingerprint: 0x70c17bc4
+Model has 83 quadratic constraints
+Variable types: 6168 continuous, 6243 integer (78 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 2e+06]
+  QMatrix range    [1e-02, 4e+04]
+  QLMatrix range   [1e+00, 4e+04]
+  Objective range  [1e+00, 4e+07]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 2e+06]
+  QRHS range       [3e-02, 3e-02]
+Presolve removed 17176 rows and 11668 columns
+Presolve time: 0.22s
+Presolved: 1364 rows, 931 columns, 14258 nonzeros
+Presolved model has 78 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 272 continuous, 659 integer (55 binary)
+Found heuristic solution: objective 9013542.3893
+
+Root relaxation: objective 0.000000e+00, 148 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  125 9013542.39    0.00000   100%     -    0s
+H    0     0                    2176116.9573    0.00000   100%     -    0s
+     0     0    0.00000    0  147 2176116.96    0.00000   100%     -    0s
+     0     0    0.00000    0  145 2176116.96    0.00000   100%     -    0s
+     0     0    0.00000    0  157 2176116.96    0.00000   100%     -    0s
+     0     0    0.00000    0  158 2176116.96    0.00000   100%     -    0s
+     0     0    0.00000    0  158 2176116.96    0.00000   100%     -    1s
+     0     0    0.00000    0  184 2176116.96    0.00000   100%     -    1s
+     0     0    0.00000    0  182 2176116.96    0.00000   100%     -    1s
+     0     0    0.00000    0  228 2176116.96    0.00000   100%     -    1s
+     0     0    0.00000    0  214 2176116.96    0.00000   100%     -    1s
+     0     0    0.00000    0  154 2176116.96    0.00000   100%     -    2s
+H    0     0                    591084.12419    0.00000   100%     -    2s
+     0     2    0.00000    0  154 591084.124    0.00000   100%     -    2s
+   130   506    0.00000   26  139 591084.124    0.00000   100%  29.5    5s
+  2275  2586 96233.3520  518  111 591084.124    0.00000   100%  12.6   10s
+H 2991  3201                    510003.65210    0.00000   100%  10.5   11s
+H 3234  3234                    508268.80388    0.00000   100%  10.0   12s
+H 3297  3329                    480951.31218    0.00000   100%  10.5   12s
+H 3416   898                    22548.792535    0.00000   100%  11.1   13s
+H 3421   845                    22548.768220    0.00000   100%  11.1   14s
+  3424   847    0.00000   45   12 22548.7682    0.00000   100%  11.1   15s
+H 3425   804                    22548.767918    0.00000   100%  11.1   15s
+  3441   818    0.00000   17   90 22548.7679    0.00000   100%  11.7   20s
+H 3461   801                       0.0000000    0.00000  0.00%  11.6   23s
+
+Cutting planes:
+  Gomory: 2
+  Implied bound: 2
+  MIR: 52
+  StrongCG: 1
+  Flow cover: 1
+  RLT: 1
+  Relax-and-lift: 1
+
+Explored 3476 nodes (44580 simplex iterations) in 23.04 seconds (10.79 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 10: 0 22548.8 22548.8 ... 9.01354e+06
+
+Optimal solution found (tolerance 5.53e-08)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%

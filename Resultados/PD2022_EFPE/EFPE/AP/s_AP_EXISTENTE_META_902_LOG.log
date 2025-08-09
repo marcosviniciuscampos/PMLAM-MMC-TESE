@@ -1,0 +1,82 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started ter 17 dez 2024 15:39:41 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 8.0361613825754059e-07
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_epec/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 806 rows, 569 columns and 2257 nonzeros
+Model fingerprint: 0xaded5318
+Model has 21 quadratic constraints
+Variable types: 278 continuous, 291 integer (16 binary)
+Coefficient statistics:
+  Matrix range     [6e-02, 9e+05]
+  QMatrix range    [6e-02, 3e+04]
+  QLMatrix range   [1e+00, 3e+04]
+  Objective range  [1e+00, 2e+06]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 3e+04]
+  QRHS range       [3e-03, 3e-03]
+Presolve removed 798 rows and 557 columns
+Presolve time: 0.00s
+Presolved: 33 rows, 20 columns, 81 nonzeros
+Presolved model has 8 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 17 continuous, 3 integer (0 binary)
+Found heuristic solution: objective 458959.74375
+
+Root relaxation: objective 4.238409e+05, 19 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 423840.908    0   11 458959.744 423840.908  7.65%     -    0s
+     0     0 424925.223    0   11 458959.744 424925.223  7.42%     -    0s
+     0     0 425681.808    0   11 458959.744 425681.808  7.25%     -    0s
+H    0     0                    449284.47689 425681.808  5.25%     -    0s
+H    0     0                    449264.48637 425681.808  5.25%     -    0s
+     0     0 425858.425    0   11 449264.486 425858.425  5.21%     -    0s
+H    0     0                    443464.49429 425858.425  3.97%     -    0s
+     0     0 425966.063    0   11 443464.494 425966.063  3.95%     -    0s
+H    0     0                    443331.92144 425966.063  3.92%     -    0s
+     0     0 427379.896    0   11 443331.921 427379.896  3.60%     -    0s
+H    0     0                    442345.64422 427379.896  3.38%     -    0s
+     0     2 427381.316    0   11 442345.644 427381.316  3.38%     -    0s
+H    3     6                    437413.63307 428033.609  2.14%   1.0    0s
+H   11    10                    435279.81158 428668.906  1.52%   1.5    0s
+H   15    10                    435251.17807 428830.657  1.48%   1.3    0s
+H   16    10                    435065.60576 428895.199  1.42%   1.2    0s
+H   19    10                    434721.35814 428896.912  1.34%   1.1    0s
+H   24    16                    434672.97630 430002.175  1.07%   2.2    0s
+H   27    16                    434554.72632 430007.339  1.05%   2.4    0s
+H   35    30                    434155.22980 430900.870  0.75%   2.5    0s
+H   37    30                    434082.22426 430900.870  0.73%   2.4    0s
+H   46    30                    434078.99921 430900.870  0.73%   2.1    0s
+H   54    42                    434039.11110 430900.870  0.72%   1.9    0s
+H   56    42                    433947.60844 430900.870  0.70%   2.1    0s
+H  180    49                    433940.35429 431066.534  0.66%   1.9    0s
+*  182    49              24    433940.34196 431066.534  0.66%   1.9    0s
+*  296     0              21    433939.81455 433889.842  0.01%   1.5    0s
+
+Cutting planes:
+  RLT: 2
+
+Explored 335 nodes (504 simplex iterations) in 0.08 seconds (0.01 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 10: 433940 433940 433948 ... 434721
+
+Optimal solution found (tolerance 8.04e-07)
+Best objective 4.339398145521e+05, best bound 4.339398145521e+05, gap 0.0000%

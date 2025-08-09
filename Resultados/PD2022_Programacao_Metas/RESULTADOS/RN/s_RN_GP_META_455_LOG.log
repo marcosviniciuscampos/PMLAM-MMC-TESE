@@ -1,0 +1,85 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started sex 06 dez 2024 06:01:55 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 6.73850205920109e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_hosp/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 81555 rows, 56288 columns and 621549 nonzeros
+Model fingerprint: 0x3a45cf2a
+Model has 172 quadratic constraints
+Variable types: 28062 continuous, 28226 integer (167 binary)
+Coefficient statistics:
+  Matrix range     [6e-03, 4e+06]
+  QMatrix range    [6e-03, 7e+04]
+  QLMatrix range   [1e+00, 7e+04]
+  Objective range  [1e+00, 3e+07]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 4e+06]
+  QRHS range       [5e-02, 5e-02]
+Presolve removed 78935 rows and 53591 columns
+Presolve time: 0.33s
+Presolved: 4033 rows, 3124 columns, 357275 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 167 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 636 continuous, 2488 integer (169 binary)
+Found heuristic solution: objective 1.224826e+07
+
+Root relaxation: objective 0.000000e+00, 275 iterations, 0.07 seconds (0.03 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  235 1.2248e+07    0.00000   100%     -    2s
+     0     0    0.00000    0  366 1.2248e+07    0.00000   100%     -    3s
+     0     0    0.00000    0  260 1.2248e+07    0.00000   100%     -    3s
+     0     0    0.00000    0  273 1.2248e+07    0.00000   100%     -    5s
+H    0     0                    1.222134e+07    0.00000   100%     -    5s
+     0     0    0.00000    0  261 1.2221e+07    0.00000   100%     -    6s
+     0     0    0.00000    0  235 1.2221e+07    0.00000   100%     -    7s
+H    0     0                    4378793.1081    0.00000   100%     -    7s
+     0     0    0.00000    0  259 4378793.11    0.00000   100%     -    8s
+     0     0    0.00000    0  246 4378793.11    0.00000   100%     -    9s
+     0     0    0.00000    0  242 4378793.11    0.00000   100%     -    9s
+     0     0    0.00000    0  249 4378793.11    0.00000   100%     -   10s
+     0     0    0.00000    0  237 4378793.11    0.00000   100%     -   11s
+H    0     0                    1890759.1959    0.00000   100%     -   21s
+     0     2    0.00000    0  235 1890759.20    0.00000   100%     -   23s
+    19    29    0.00000    8  211 1890759.20    0.00000   100%  92.6   25s
+    46    96    0.00000   20  214 1890759.20    0.00000   100%  98.3   30s
+H   66    96                    1573150.5634    0.00000   100%  89.2   30s
+H   90    96                    1467651.7328    0.00000   100%  79.1   30s
+    95   197    0.00000   37  215 1467651.73    0.00000   100%  76.7   36s
+H  116   197                    811561.74148    0.00000   100%  75.1   36s
+   196   353    0.00000   79  207 811561.741    0.00000   100%  92.9   63s
+   354   898    0.00000  126  167 811561.741    0.00000   100%  73.4   78s
+H  906  1027                    59593.799858    0.00000   100%  37.3   84s
+  1053  1232 infeasible  421      59593.7999    0.00000   100%  36.0   92s
+H 1208   320                       0.0000000    0.00000  0.00%  32.7   92s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 6
+  MIR: 113
+  StrongCG: 4
+
+Explored 1322 nodes (46025 simplex iterations) in 92.19 seconds (43.86 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 9: 0 59593.8 811562 ... 1.22483e+07
+
+Optimal solution found (tolerance 6.74e-08)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%

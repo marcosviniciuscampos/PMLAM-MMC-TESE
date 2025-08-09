@@ -1,0 +1,81 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started qua 27 nov 2024 08:38:12 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 2.3060879868461677e-07
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_hosp/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 8098 rows, 5573 columns and 26595 nonzeros
+Model fingerprint: 0x271964da
+Model has 57 quadratic constraints
+Variable types: 2762 continuous, 2811 integer (52 binary)
+Coefficient statistics:
+  Matrix range     [2e-02, 8e+05]
+  QMatrix range    [2e-02, 3e+04]
+  QLMatrix range   [1e+00, 3e+04]
+  Objective range  [1e+00, 9e+06]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 1e+06]
+  QRHS range       [2e-01, 2e-01]
+Presolve removed 7755 rows and 5222 columns
+Presolve time: 0.07s
+Presolved: 801 rows, 489 columns, 6911 nonzeros
+Presolved model has 52 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 196 continuous, 293 integer (43 binary)
+Found heuristic solution: objective 3804872.2932
+
+Root relaxation: objective 0.000000e+00, 218 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  109 3804872.29    0.00000   100%     -    0s
+H    0     0                    1078351.7469    0.00000   100%     -    0s
+H    0     0                    1074774.3504    0.00000   100%     -    0s
+     0     0    0.00000    0   68 1074774.35    0.00000   100%     -    0s
+     0     0    0.00000    0   65 1074774.35    0.00000   100%     -    0s
+H    0     0                    701331.06439    0.00000   100%     -    0s
+H    0     0                    589615.32234    0.00000   100%     -    0s
+     0     0    0.00000    0   67 589615.322    0.00000   100%     -    0s
+     0     0    0.00000    0   68 589615.322    0.00000   100%     -    0s
+H    0     0                    292280.61478    0.00000   100%     -    0s
+     0     0    0.00000    0   69 292280.615    0.00000   100%     -    0s
+     0     0    0.00000    0   77 292280.615    0.00000   100%     -    0s
+     0     0    0.00000    0   78 292280.615    0.00000   100%     -    0s
+     0     0    0.00000    0   78 292280.615    0.00000   100%     -    0s
+     0     2    0.00000    0   62 292280.615    0.00000   100%     -    0s
+H   22    36                    41471.936554    0.00000   100%  32.2    1s
+H   62    96                    32118.079935    0.00000   100%  27.0    1s
+H  132   213                       0.0000000    0.00000  0.00%  21.8    1s
+
+Cutting planes:
+  Learned: 4
+  Gomory: 7
+  Implied bound: 8
+  MIR: 67
+  StrongCG: 3
+  Zero half: 3
+  RLT: 3
+  Relax-and-lift: 3
+  PSD: 1
+
+Explored 264 nodes (6121 simplex iterations) in 1.57 seconds (0.72 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 9: 0 32118.1 41471.9 ... 3.80487e+06
+
+Optimal solution found (tolerance 2.31e-07)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%

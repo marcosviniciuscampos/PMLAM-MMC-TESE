@@ -1,0 +1,86 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started seg 25 nov 2024 06:45:17 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 1.7445418436480762e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_hosp/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 519984 rows, 349038 columns and 2312304 nonzeros
+Model fingerprint: 0xb60a9601
+Model has 422 quadratic constraints
+Variable types: 174312 continuous, 174726 integer (417 binary)
+Coefficient statistics:
+  Matrix range     [2e-03, 1e+07]
+  QMatrix range    [2e-03, 2e+05]
+  QLMatrix range   [1e+00, 2e+05]
+  Objective range  [1e+00, 1e+08]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 2e+07]
+  QRHS range       [2e-01, 2e-01]
+Presolve removed 516050 rows and 344926 columns
+Presolve time: 2.42s
+Presolved: 7588 rows, 5215 columns, 1044660 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 417 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 1599 continuous, 3616 integer (419 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.553031e+03   0.000000e+00      8s
+     943    0.0000000e+00   0.000000e+00   0.000000e+00      9s
+
+Root relaxation: objective 0.000000e+00, 943 iterations, 0.55 seconds (0.18 work units)
+Total elapsed time = 8.64s (DegenMoves)
+Total elapsed time = 10.38s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  316          -    0.00000      -     -   10s
+     0     0    0.00000    0  258          -    0.00000      -     -   12s
+     0     0    0.00000    0  139          -    0.00000      -     -   13s
+     0     0    0.00000    0  173          -    0.00000      -     -   21s
+     0     0    0.00000    0  175          -    0.00000      -     -   22s
+     0     0    0.00000    0  158          -    0.00000      -     -   26s
+     0     0    0.00000    0  158          -    0.00000      -     -   27s
+     0     0    0.00000    0  158          -    0.00000      -     -   35s
+H    0     0                    1616734.7801    0.00000   100%     -   46s
+     0     2    0.00000    0  158 1616734.78    0.00000   100%     -   50s
+    20    28    0.00000    8  155 1616734.78    0.00000   100%  52.2   55s
+    47    92    0.00000   18  159 1616734.78    0.00000   100%  28.6   66s
+H   85    92                    1544581.2377    0.00000   100%  22.0   66s
+    91   204    0.00000   33  146 1544581.24    0.00000   100%  21.4   77s
+   204   322    0.00000   76  134 1544581.24    0.00000   100%  20.9   87s
+H  262   322                    1542631.1419    0.00000   100%  19.4   87s
+   324   440    0.00000  116  122 1542631.14    0.00000   100%  18.0  126s
+   443   624    0.00000  171  108 1542631.14    0.00000   100%  17.6  146s
+H  542   299                       0.0000000    0.00000  0.00%  15.5  146s
+
+Cutting planes:
+  Gomory: 28
+  Implied bound: 3
+  MIR: 312
+  StrongCG: 22
+  Relax-and-lift: 4
+
+Explored 627 nodes (15902 simplex iterations) in 146.59 seconds (58.70 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 4: 0 1.54263e+06 1.54458e+06 1.61673e+06 
+
+Optimal solution found (tolerance 1.74e-08)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%

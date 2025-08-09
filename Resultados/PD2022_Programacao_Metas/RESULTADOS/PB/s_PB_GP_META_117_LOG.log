@@ -1,0 +1,89 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started qua 04 dez 2024 18:54:16 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 5.5922415627952831e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_hosp/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 145936 rows, 100136 columns and 1216938 nonzeros
+Model fingerprint: 0x142d2cea
+Model has 228 quadratic constraints
+Variable types: 49958 continuous, 50178 integer (223 binary)
+Coefficient statistics:
+  Matrix range     [4e-03, 4e+06]
+  QMatrix range    [4e-03, 7e+04]
+  QLMatrix range   [1e+00, 7e+04]
+  Objective range  [1e+00, 4e+07]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 9e+05]
+  QRHS range       [1e-01, 1e-01]
+Presolve removed 143322 rows and 97275 columns
+Presolve time: 0.87s
+Presolved: 4006 rows, 3290 columns, 456387 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 223 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 777 continuous, 2513 integer (225 binary)
+Found heuristic solution: objective 1.701975e+07
+
+Root relaxation: objective 0.000000e+00, 416 iterations, 0.23 seconds (0.05 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  330 1.7020e+07    0.00000   100%     -    4s
+     0     0    0.00000    0  272 1.7020e+07    0.00000   100%     -    5s
+     0     0    0.00000    0  252 1.7020e+07    0.00000   100%     -    7s
+     0     0    0.00000    0  244 1.7020e+07    0.00000   100%     -    9s
+     0     0    0.00000    0  249 1.7020e+07    0.00000   100%     -    9s
+     0     0    0.00000    0  236 1.7020e+07    0.00000   100%     -   10s
+     0     0    0.00000    0  237 1.7020e+07    0.00000   100%     -   11s
+     0     0    0.00000    0  238 1.7020e+07    0.00000   100%     -   11s
+H    0     0                    1.698383e+07    0.00000   100%     -   12s
+     0     0    0.00000    0  240 1.6984e+07    0.00000   100%     -   13s
+     0     0    0.00000    0  240 1.6984e+07    0.00000   100%     -   14s
+     0     0    0.00000    0  240 1.6984e+07    0.00000   100%     -   15s
+     0     0    0.00000    0  240 1.6984e+07    0.00000   100%     -   19s
+     0     2    0.00000    0  240 1.6984e+07    0.00000   100%     -   26s
+    34    65    0.00000   15  237 1.6984e+07    0.00000   100%  48.6   30s
+    64   145    0.00000   28  238 1.6984e+07    0.00000   100%  51.1   65s
+   144   391    0.00000   67  232 1.6984e+07    0.00000   100%  38.5   84s
+   484   607    0.00000  197  223 1.6984e+07    0.00000   100%  90.1   95s
+   730   758 infeasible  276      1.6984e+07    0.00000   100%  79.0  104s
+H  961   912                    1.271541e+07    0.00000   100%  75.8  114s
+H 1123   989                    1.212524e+07    0.00000   100%  69.9  122s
+  1280  1037    0.00000  413  223 1.2125e+07    0.00000   100%  67.4  133s
+H 1291  1037                    1.193837e+07    0.00000   100%  67.1  133s
+H 1444  1037                    1.188267e+07    0.00000   100%  63.8  133s
+  1485  1100    0.00000  489  223 1.1883e+07    0.00000   100%  65.6  142s
+  1620  1203    0.00000  507  225 1.1883e+07    0.00000   100%  69.7  150s
+H 1653  1161                    43506.397907    0.00000   100%  70.0  150s
+  1738  1461    0.00000  587  223 43506.3979    0.00000   100%  69.9  163s
+H 1750   420                       0.0000000    0.00000  0.00%  69.5  163s
+
+Cutting planes:
+  Gomory: 10
+  Implied bound: 2
+  MIR: 103
+  StrongCG: 25
+  RLT: 3
+
+Explored 2208 nodes (129369 simplex iterations) in 163.21 seconds (65.63 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 8: 0 43506.4 1.18827e+07 ... 1.70198e+07
+
+Optimal solution found (tolerance 5.59e-08)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%

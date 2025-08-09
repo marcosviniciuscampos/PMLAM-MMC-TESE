@@ -1,0 +1,89 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started ter 26 nov 2024 05:04:12 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 1.8408048912002939e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_hosp/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 730984 rows, 493529 columns and 5887863 nonzeros
+Model fingerprint: 0x743aeb50
+Model has 501 quadratic constraints
+Variable types: 246518 continuous, 247011 integer (496 binary)
+Coefficient statistics:
+  Matrix range     [2e-03, 7e+06]
+  QMatrix range    [2e-03, 1e+05]
+  QLMatrix range   [1e+00, 1e+05]
+  Objective range  [1e+00, 1e+08]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 7e+05]
+  QRHS range       [2e-01, 2e-01]
+Presolve removed 725459 rows and 487442 columns
+Presolve time: 4.64s
+Presolved: 8632 rows, 7045 columns, 2071474 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 496 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 1724 continuous, 5321 integer (498 binary)
+Found heuristic solution: objective 3.983147e+07
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.156995e+04   0.000000e+00     16s
+     449    0.0000000e+00   0.000000e+00   0.000000e+00     16s
+
+Root relaxation: objective 0.000000e+00, 449 iterations, 0.47 seconds (0.09 work units)
+Total elapsed time = 16.09s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  665 3.9831e+07    0.00000   100%     -   17s
+     0     0    0.00000    0  566 3.9831e+07    0.00000   100%     -   20s
+     0     0    0.00000    0  544 3.9831e+07    0.00000   100%     -   33s
+     0     0    0.00000    0  544 3.9831e+07    0.00000   100%     -   35s
+     0     0    0.00000    0  517 3.9831e+07    0.00000   100%     -   44s
+     0     0    0.00000    0  511 3.9831e+07    0.00000   100%     -   54s
+     0     0    0.00000    0  501 3.9831e+07    0.00000   100%     -   63s
+H    0     0                    580326.79176    0.00000   100%     -   64s
+     0     0    0.00000    0  500 580326.792    0.00000   100%     -   64s
+     0     0    0.00000    0  500 580326.792    0.00000   100%     -   65s
+     0     0    0.00000    0  500 580326.792    0.00000   100%     -   66s
+     0     0    0.00000    0  500 580326.792    0.00000   100%     -   74s
+     0     2    0.00000    0  500 580326.792    0.00000   100%     -   94s
+     1     4    0.00000    1  500 580326.792    0.00000   100%   5.0   95s
+    23    31    0.00000   12  501 580326.792    0.00000   100%   2.8  101s
+    30    53    0.00000   15  500 580326.792    0.00000   100%   2.7  474s
+    52   150    0.00000   27  498 580326.792    0.00000   100%   2.4  508s
+H   69   150                    554029.31545    0.00000   100%  11.1  508s
+H  151   188                    23272.664788    0.00000   100%  12.6  545s
+   200   221    0.00000   60  496 23272.6648    0.00000   100%  19.2  575s
+   233   266    0.00000   68  496 23272.6648    0.00000   100%  31.2  607s
+   280   370    0.00000   81  500 23272.6648    0.00000   100%  37.3  662s
+   384   590    0.00000   99  499 23272.6648    0.00000   100%  36.9  777s
+H  641   335                       0.0000000    0.00000  0.00%  57.3  777s
+
+Cutting planes:
+  Gomory: 14
+  MIR: 154
+  RLT: 5
+
+Explored 642 nodes (40754 simplex iterations) in 777.53 seconds (223.45 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 5: 0 23272.7 554029 ... 3.98315e+07
+
+Optimal solution found (tolerance 1.84e-08)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%

@@ -1,0 +1,90 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started dom 08 dez 2024 15:56:00 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 1.8408048912002939e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_epec/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 731480 rows, 493529 columns and 5888359 nonzeros
+Model fingerprint: 0x3721ce08
+Model has 501 quadratic constraints
+Variable types: 246518 continuous, 247011 integer (496 binary)
+Coefficient statistics:
+  Matrix range     [2e-03, 7e+06]
+  QMatrix range    [2e-03, 1e+05]
+  QLMatrix range   [1e+00, 1e+05]
+  Objective range  [1e+00, 1e+08]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 7e+06]
+  QRHS range       [1e-01, 1e-01]
+Presolve removed 728521 rows and 489633 columns (presolve time = 5s) ...
+Presolve removed 728518 rows and 489631 columns
+Presolve time: 5.61s
+Presolved: 4878 rows, 4497 columns, 964445 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 496 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 1596 continuous, 2901 integer (498 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.629295e+04   0.000000e+00      8s
+     553    0.0000000e+00   0.000000e+00   0.000000e+00      9s
+
+Root relaxation: objective 0.000000e+00, 553 iterations, 0.65 seconds (0.17 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  498          -    0.00000      -     -    8s
+H    0     0                    1575076.7704    0.00000   100%     -    9s
+     0     0    0.00000    0  498 1575076.77    0.00000   100%     -   10s
+     0     0    0.00000    0  498 1575076.77    0.00000   100%     -   11s
+     0     0    0.00000    0  498 1575076.77    0.00000   100%     -   12s
+     0     0    0.00000    0  498 1575076.77    0.00000   100%     -   12s
+     0     0    0.00000    0  498 1575076.77    0.00000   100%     -   13s
+     0     0    0.00000    0  498 1575076.77    0.00000   100%     -   13s
+     0     0    0.00000    0  498 1575076.77    0.00000   100%     -   16s
+H    0     0                    1574836.8331    0.00000   100%     -   18s
+H    0     0                    1574825.9882    0.00000   100%     -   20s
+     0     2    0.00000    0  498 1574825.99    0.00000   100%     -   21s
+    22    33    0.00000   11  498 1574825.99    0.00000   100%  10.6   25s
+    32    40    0.00000   16  498 1574825.99    0.00000   100%   9.7  209s
+    39    71    0.00000   18  502 1574825.99    0.00000   100%  11.1  217s
+    70   247    0.00000   28  499 1574825.99    0.00000   100%  10.5  233s
+H   72   247                    1198878.2303    0.00000   100%  10.2  233s
+   246   440    0.00000   68  496 1198878.23    0.00000   100%   9.2  248s
+H  439   618                    1157999.7970    0.00000   100%   8.3  262s
+   617   743    0.00000  163  496 1157999.80    0.00000   100%  10.0  272s
+   744   839    0.00000  180  496 1157999.80    0.00000   100%  14.3  285s
+   848   975    0.00000  217  496 1157999.80    0.00000   100%  20.0  298s
+H  994  1000                    129372.13087    0.00000   100%  25.4  305s
+  1032  1016    0.00000  259  498 129372.131    0.00000   100%  27.3  321s
+H 1182   980                    17263.864875    0.00000   100%  26.5  340s
+  1368  1003    0.00000  278  496 17263.8649    0.00000   100%  25.1  348s
+H 1414   136                       0.0000000    0.00000  0.00%  26.8  348s
+
+Cutting planes:
+  Gomory: 2
+  RLT: 6
+
+Explored 1415 nodes (38461 simplex iterations) in 348.81 seconds (103.32 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 8: 0 17263.9 129372 ... 1.57508e+06
+
+Optimal solution found (tolerance 1.84e-08)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%

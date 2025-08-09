@@ -1,0 +1,95 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started dom 24 nov 2024 21:52:37 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 1.8408048912002939e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_hosp/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 730984 rows, 493529 columns and 5887863 nonzeros
+Model fingerprint: 0x61fc4898
+Model has 501 quadratic constraints
+Variable types: 246518 continuous, 247011 integer (496 binary)
+Coefficient statistics:
+  Matrix range     [2e-03, 7e+06]
+  QMatrix range    [2e-03, 1e+05]
+  QLMatrix range   [1e+00, 1e+05]
+  Objective range  [1e+00, 1e+08]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 7e+06]
+  QRHS range       [2e-01, 2e-01]
+Presolve removed 725459 rows and 487442 columns
+Presolve time: 4.45s
+Presolved: 8632 rows, 7045 columns, 2071474 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 496 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 1724 continuous, 5321 integer (498 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.437917e+04   0.000000e+00     16s
+     822    0.0000000e+00   0.000000e+00   0.000000e+00     16s
+
+Root relaxation: objective 0.000000e+00, 822 iterations, 0.66 seconds (0.23 work units)
+Total elapsed time = 16.06s (DegenMoves)
+Total elapsed time = 20.68s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  705          -    0.00000      -     -   23s
+     0     0    0.00000    0  607          -    0.00000      -     -   25s
+     0     0    0.00000    0  567          -    0.00000      -     -   27s
+     0     0    0.00000    0  552          -    0.00000      -     -   34s
+     0     0    0.00000    0  552          -    0.00000      -     -   36s
+     0     0    0.00000    0  556          -    0.00000      -     -   43s
+     0     0    0.00000    0  553          -    0.00000      -     -   50s
+     0     0    0.00000    0  553          -    0.00000      -     -   55s
+     0     0    0.00000    0  553          -    0.00000      -     -   63s
+H    0     0                    2089474.4505    0.00000   100%     -   84s
+     0     2    0.00000    0  553 2089474.45    0.00000   100%     -   92s
+     5     8    0.00000    3  550 2089474.45    0.00000   100%  31.8   95s
+H   26    31                    2085262.5826    0.00000   100%  20.0  101s
+    30    56    0.00000   15  545 2085262.58    0.00000   100%  25.8  106s
+    55   103    0.00000   26  548 2085262.58    0.00000   100%  24.4  115s
+H   76   103                    2085040.9053    0.00000   100%  27.2  116s
+   102   198    0.00000   43  541 2085040.91    0.00000   100%  24.3  131s
+H  198   306                    2084930.0667    0.00000   100%  33.1  152s
+   306   423    0.00000  127  526 2084930.07    0.00000   100%  31.6  505s
+H  370   423                    2084874.6473    0.00000   100%  29.5  505s
+   423   702    0.00000  182  496 2084874.65    0.00000   100%  31.6  571s
+H  704   769                    2077836.3943    0.00000   100%  28.1  602s
+   778   945    0.00000  269  496 2077836.39    0.00000   100%  35.9  660s
+H  787   945                    1904983.5494    0.00000   100%  39.4  660s
+  1024  1015    0.00000  315  497 1904983.55    0.00000   100%  34.1  692s
+H 1025   191                       0.0000000    0.00000  0.00%  34.1  692s
+
+Cutting planes:
+  Gomory: 39
+  Implied bound: 1
+  MIR: 156
+  StrongCG: 31
+  Mod-K: 1
+  RLT: 2
+  Relax-and-lift: 1
+
+Explored 1104 nodes (41213 simplex iterations) in 692.49 seconds (213.59 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 8: 0 1.90498e+06 2.07784e+06 ... 2.08947e+06
+
+Optimal solution found (tolerance 1.84e-08)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%

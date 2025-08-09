@@ -1,0 +1,79 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started ter 17 dez 2024 15:35:04 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 8.6626826275457542e-07
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_epec/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 1507 rows, 1043 columns and 4050 nonzeros
+Model fingerprint: 0x2a2ddcf8
+Model has 27 quadratic constraints
+Variable types: 512 continuous, 531 integer (22 binary)
+Coefficient statistics:
+  Matrix range     [5e-02, 6e+05]
+  QMatrix range    [5e-02, 2e+04]
+  QLMatrix range   [1e+00, 2e+04]
+  Objective range  [1e+00, 2e+06]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 4e+05]
+  QRHS range       [8e-02, 8e-02]
+Presolve removed 1498 rows and 1027 columns
+Presolve time: 0.01s
+Presolved: 31 rows, 23 columns, 88 nonzeros
+Presolved model has 7 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 17 continuous, 6 integer (0 binary)
+Found heuristic solution: objective 96903.779988
+
+Root relaxation: objective 3.828615e+04, 20 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 38286.1533    0   11 96903.7800 38286.1533  60.5%     -    0s
+     0     0 55886.0257    0   12 96903.7800 55886.0257  42.3%     -    0s
+H    0     0                    86194.674464 56413.0985  34.6%     -    0s
+     0     0 58340.3302    0   12 86194.6745 58340.3302  32.3%     -    0s
+H    0     0                    79676.466639 58340.3302  26.8%     -    0s
+     0     0 59598.8219    0   12 79676.4666 59598.8219  25.2%     -    0s
+     0     2 59598.8219    0   12 79676.4666 59598.8219  25.2%     -    0s
+H    3     6                    78144.516533 61827.6500  20.9%   1.0    0s
+H   11    16                    76796.431826 66001.7101  14.1%   2.9    0s
+H   15    20                    76645.517720 66001.7101  13.9%   2.3    0s
+H   19    24                    76600.679878 66001.7101  13.8%   1.9    0s
+H   37    34                    76550.341500 66001.7101  13.8%   2.1    0s
+H   43    42                    76546.684713 66001.7101  13.8%   2.2    0s
+H   56    46                    76462.989541 66001.7101  13.7%   2.2    0s
+*   67    50              19    76460.069265 66001.7101  13.7%   2.1    0s
+H   70    50                    76459.810368 66001.7101  13.7%   2.0    0s
+*   79    56              22    76459.796172 69001.1581  9.75%   1.9    0s
+H  169    92                    76414.836995 69574.2507  8.95%   2.3    0s
+H  180    92                    76357.245922 69574.2507  8.88%   2.3    0s
+H  213   108                    76355.400468 69574.2507  8.88%   2.1    0s
+*  217   108              30    76355.349346 69574.2507  8.88%   2.1    0s
+*  245   129              29    76355.321678 70572.5516  7.57%   2.0    0s
+H  840   180                    76354.833098 74168.4570  2.86%   2.0    0s
+* 1325   161              33    76350.578976 75885.9240  0.61%   2.0    0s
+* 1329   160              33    76350.433714 75885.9240  0.61%   2.0    0s
+* 2486    77              28    76350.335493 76321.3871  0.04%   1.8    0s
+* 3259    17              29    76350.155007 76341.9785  0.01%   1.7    0s
+
+Explored 3349 nodes (5699 simplex iterations) in 0.42 seconds (0.09 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 10: 76350.2 76350.3 76350.4 ... 76459.8
+
+Optimal solution found (tolerance 8.66e-07)
+Best objective 7.635015500732e+04, best bound 7.635015500732e+04, gap 0.0000%

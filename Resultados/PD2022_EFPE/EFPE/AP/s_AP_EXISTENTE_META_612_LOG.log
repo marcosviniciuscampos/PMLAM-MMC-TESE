@@ -1,0 +1,88 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started ter 17 dez 2024 15:38:17 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 8.0361613825754059e-07
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_epec/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 806 rows, 569 columns and 2257 nonzeros
+Model fingerprint: 0x737ab5cb
+Model has 21 quadratic constraints
+Variable types: 278 continuous, 291 integer (16 binary)
+Coefficient statistics:
+  Matrix range     [6e-02, 9e+05]
+  QMatrix range    [6e-02, 3e+04]
+  QLMatrix range   [1e+00, 3e+04]
+  Objective range  [1e+00, 2e+06]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 4e+04]
+  QRHS range       [3e-03, 3e-03]
+Presolve removed 795 rows and 552 columns
+Presolve time: 0.00s
+Presolved: 36 rows, 25 columns, 99 nonzeros
+Presolved model has 8 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 19 continuous, 6 integer (0 binary)
+Found heuristic solution: objective 513715.29725
+
+Root relaxation: objective 4.314682e+05, 24 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 431468.186    0   13 513715.297 431468.186  16.0%     -    0s
+H    0     0                    488199.92190 431468.186  11.6%     -    0s
+H    0     0                    488193.63046 431468.186  11.6%     -    0s
+     0     0 441131.436    0   13 488193.630 441131.436  9.64%     -    0s
+H    0     0                    474058.17872 441131.436  6.95%     -    0s
+     0     0 441358.896    0   13 474058.179 441358.896  6.90%     -    0s
+H    0     0                    471422.63889 441358.896  6.38%     -    0s
+     0     0 441401.984    0   13 471422.639 441401.984  6.37%     -    0s
+H    0     0                    470847.40186 441401.984  6.25%     -    0s
+     0     0 443405.951    0   12 470847.402 443405.951  5.83%     -    0s
+H    0     0                    465192.63058 443405.951  4.68%     -    0s
+     0     2 443405.951    0   12 465192.631 443405.951  4.68%     -    0s
+H    3     6                    463441.90414 444086.140  4.18%   2.7    0s
+H   16    20                    461329.42909 444541.255  3.64%   3.4    0s
+H   56    52                    461301.73143 444559.165  3.63%   2.8    0s
+H   67    60                    460539.00068 444559.165  3.47%   2.8    0s
+H  180   130                    460537.28483 444559.165  3.47%   3.4    0s
+H  367   239                    460455.43193 444559.165  3.45%   2.9    0s
+H  755   462                    460123.73450 444870.809  3.31%   2.7    0s
+H  774   458                    459928.86770 444870.809  3.27%   2.7    0s
+* 3227   538              23    459892.33971 459137.389  0.16%   2.9    0s
+* 3234   502              25    459881.81828 459137.389  0.16%   2.9    0s
+* 3235   477              25    459877.64139 459137.389  0.16%   2.9    0s
+* 3249   457              27    459876.87415 459137.389  0.16%   2.9    0s
+* 3253   434              28    459862.23880 459137.389  0.16%   2.9    0s
+* 3263   405              28    459862.09449 459186.998  0.15%   2.9    0s
+* 3285   372              27    459859.42590 459292.771  0.12%   2.9    0s
+* 3354   339              29    459855.89008 459597.221  0.06%   2.9    0s
+* 3357   320              30    459853.47846 459597.221  0.06%   2.9    0s
+* 3373   283              31    459852.63895 459624.119  0.05%   2.9    0s
+* 3378   264              31    459851.29682 459624.119  0.05%   2.9    0s
+* 3390   245              30    459850.91679 459638.868  0.05%   2.9    0s
+* 3443   212              31    459848.01596 459768.999  0.02%   2.8    0s
+
+Cutting planes:
+  RLT: 2
+
+Explored 3487 nodes (9870 simplex iterations) in 0.46 seconds (0.10 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 10: 459848 459851 459851 ... 459877
+
+Optimal solution found (tolerance 8.04e-07)
+Best objective 4.598480159591e+05, best bound 4.598480159591e+05, gap 0.0000%

@@ -1,0 +1,60 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started dom 08 dez 2024 00:58:39 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 1.2352135373468347e-07
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_epec/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 18373 rows, 12411 columns and 53402 nonzeros
+Model fingerprint: 0x42bfbf23
+Model has 83 quadratic constraints
+Variable types: 6168 continuous, 6243 integer (78 binary)
+Coefficient statistics:
+  Matrix range     [1e-02, 4e+06]
+  QMatrix range    [1e-02, 7e+04]
+  QLMatrix range   [1e+00, 7e+04]
+  Objective range  [2e+00, 2e+07]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 2e+05]
+  QRHS range       [2e-01, 2e-01]
+Presolve removed 18320 rows and 12333 columns
+Presolve time: 0.15s
+Presolved: 186 rows, 122 columns, 1094 nonzeros
+Presolved model has 44 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 93 continuous, 29 integer (0 binary)
+Found heuristic solution: objective 2755511.4197
+
+Root relaxation: objective 2.376628e+06, 50 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2376628.21    0   45 2755511.42 2376628.21  13.8%     -    0s
+H    0     0                    2376642.2017 2376628.21  0.00%     -    0s
+     0     0     cutoff    0      2376642.20 2376642.20  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 2
+  RLT: 43
+
+Explored 1 nodes (50 simplex iterations) in 0.17 seconds (0.12 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 2: 2.37664e+06 2.75551e+06 
+
+Optimal solution found (tolerance 1.24e-07)
+Best objective 2.376642201697e+06, best bound 2.376642201697e+06, gap 0.0000%

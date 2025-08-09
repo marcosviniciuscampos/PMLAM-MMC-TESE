@@ -1,0 +1,88 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started seg 25 nov 2024 06:47:58 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 1.7445418436480762e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_hosp/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 519984 rows, 349038 columns and 2312304 nonzeros
+Model fingerprint: 0xda2d05a2
+Model has 422 quadratic constraints
+Variable types: 174312 continuous, 174726 integer (417 binary)
+Coefficient statistics:
+  Matrix range     [2e-03, 1e+07]
+  QMatrix range    [2e-03, 2e+05]
+  QLMatrix range   [1e+00, 2e+05]
+  Objective range  [1e+00, 1e+08]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 1e+06]
+  QRHS range       [2e-01, 2e-01]
+Presolve removed 516050 rows and 344926 columns
+Presolve time: 2.71s
+Presolved: 7588 rows, 5215 columns, 1044660 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 417 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 1599 continuous, 3616 integer (419 binary)
+Found heuristic solution: objective 5.460753e+07
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.163125e+03   0.000000e+00      9s
+     564    1.7017487e+05   0.000000e+00   0.000000e+00      9s
+
+Root relaxation: objective 1.701749e+05, 564 iterations, 0.23 seconds (0.06 work units)
+Total elapsed time = 9.10s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 170174.869    0  760 5.4608e+07 170174.869   100%     -    9s
+H    0     0                    1.934951e+07 170174.869  99.1%     -    9s
+     0     0 4639193.89    0  479 1.9350e+07 4639193.89  76.0%     -   12s
+     0     0 4662486.14    0  462 1.9350e+07 4662486.14  75.9%     -   14s
+     0     0 4724731.22    0  492 1.9350e+07 4724731.22  75.6%     -   15s
+     0     0 4731994.57    0  494 1.9350e+07 4731994.57  75.5%     -   16s
+     0     0 4731994.57    0  490 1.9350e+07 4731994.57  75.5%     -   17s
+     0     0 4736750.21    0  490 1.9350e+07 4736750.21  75.5%     -   18s
+     0     0 4736750.21    0  490 1.9350e+07 4736750.21  75.5%     -   19s
+     0     0 4736750.21    0  490 1.9350e+07 4736750.21  75.5%     -   24s
+     0     2 4736750.21    0  490 1.9350e+07 4736750.21  75.5%     -   30s
+    27    30 4755505.53   10  435 1.9350e+07 4738028.38  75.5%   7.6   39s
+H   28    30                    4803368.7241 4738028.38  1.36%   7.4   39s
+    31    34 4781975.72   12  434 4803368.72 4738028.38  1.36%   7.9   40s
+    39    41 4782168.71   16  435 4803368.72 4738028.38  1.36%   6.8  205s
+H   57    56                    4743969.7904 4738028.38  0.13%   6.0  208s
+    67    54 4741287.66    5  458 4743969.79 4738033.15  0.13%   5.6  210s
+   104    56 4743752.49   21  441 4743969.79 4738033.15  0.13%   4.4  215s
+H  116    57                    4741025.9189 4738526.90  0.05%   4.3  216s
+   137    55 4740028.48   13  428 4741025.92 4739364.29  0.04%   4.6  220s
+   192     0     cutoff   11      4741025.92 4741025.92  0.00%   4.6  225s
+
+Cutting planes:
+  Gomory: 13
+  Implied bound: 1
+  MIR: 341
+  StrongCG: 3
+  RLT: 3
+
+Explored 221 nodes (2624 simplex iterations) in 225.22 seconds (47.84 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 5: 4.74103e+06 4.74397e+06 4.80337e+06 ... 5.46075e+07
+
+Optimal solution found (tolerance 1.74e-08)
+Best objective 4.741025918944e+06, best bound 4.741025918944e+06, gap 0.0000%
