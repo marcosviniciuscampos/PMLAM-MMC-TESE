@@ -1,16 +1,16 @@
-A instance for MOMULAP has the following structure:
+Uma instância para o PMLAM segue a seguinte estrutura:
 
-Data 										Number of lines
+Dados 										Número de Linhas
 
-abbreviation of the Brazilian state						1
-n = number of cities								1
-p = number of mammography units to be located					1
-R = maximum distance a woman must travel in km				1
-cap = annual screening capacity of a mammography unit			1
-city ibge code									n
-city name									n
-annual demand for mammography screenings in city				n
-distance from city i to city j in km						n x n
-number of equipments installed in the city					n
-number of equipments installed in the city under municipal management	n
-number of hospitals in the city						n
+abreviação do estado brasileiro						1
+n = número de municípios							1
+p = número de mamógrafos disponível			           		1
+R = distância máxima que uma mulher pode viajar (em km)			1
+cap = capacidade anual de realização de mamografias de um mamógrafo          1
+código ibge do município							n
+nome do município								n
+demanda anual de mamografias no município					n
+distância do município i para o município j (em km)				n x n
+número de mamógrafos instalados no município					n
+número de mamógrafos instalados no município sob gestão municipal		n
+número de hospitais no município						n
