@@ -1,24 +1,28 @@
 
-Gurobi 11.0.3 (linux64, Java) logging started ter 26 nov 2024 09:45:11 -03
+Gurobi 11.0.3 (linux64, Java) logging started qui 25 dez 2025 01:29:06 -03
 
-Set parameter Username
-Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2566693
+Academic license 2566693 - for non-commercial use only - registered to ja___@ufv.br
 Set parameter NonConvex to value 2
 Set parameter TimeLimit to value 3600
 Set parameter LogToConsole to value 0
-Set parameter MIPGap to value 1.8408048912002939e-08
+Set parameter MIPGap to value 1.8403064957571938e-08
 Set parameter Threads to value 2
-Set parameter NodefileDir to value "/home/ps12398/experiment_hosp/goalProgrammingMarcos/"
-Set parameter NodefileStart to value 1
+Set parameter Cuts to value 1
+Set parameter NodefileDir to value "/home/ps12398/gp-momulap/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 0.1
 Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
 
 CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
 Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
 
-Optimize a model with 730984 rows, 493529 columns and 5887863 nonzeros
-Model fingerprint: 0xa666d960
-Model has 501 quadratic constraints
-Variable types: 246518 continuous, 247011 integer (496 binary)
+Academic license 2566693 - for non-commercial use only - registered to ja___@ufv.br
+Optimize a model with 733928 rows, 495518 columns and 5922184 nonzeros
+Model fingerprint: 0xbee1fcba
+Model has 502 quadratic constraints
+Variable types: 247512 continuous, 248006 integer (497 binary)
 Coefficient statistics:
   Matrix range     [2e-03, 7e+06]
   QMatrix range    [2e-03, 1e+05]
@@ -27,84 +31,88 @@ Coefficient statistics:
   Bounds range     [1e+00, 1e+08]
   RHS range        [1e+00, 1e+07]
   QRHS range       [2e-01, 2e-01]
-Presolve removed 725459 rows and 487442 columns
-Presolve time: 4.57s
-Presolved: 8632 rows, 7045 columns, 2071474 nonzeros
+Presolve removed 728393 rows and 489419 columns
+Presolve time: 4.29s
+Presolved: 8645 rows, 7058 columns, 2079615 nonzeros
 Presolved model has 2 SOS constraint(s)
-Presolved model has 496 bilinear constraint(s)
+Presolved model has 497 bilinear constraint(s)
 
 Solving non-convex MIQCP
 
-Variable types: 1724 continuous, 5321 integer (498 binary)
+Variable types: 1727 continuous, 5331 integer (499 binary)
 
 Root simplex log...
 
 Iteration    Objective       Primal Inf.    Dual Inf.      Time
-       0    0.0000000e+00   1.156995e+04   0.000000e+00     15s
-     590    1.9875837e-02   0.000000e+00   0.000000e+00     15s
+       0    0.0000000e+00   1.157039e+04   0.000000e+00     22s
+     540    0.0000000e+00   0.000000e+00   0.000000e+00     22s
 
-Root relaxation: objective 0.000000e+00, 590 iterations, 0.68 seconds (0.16 work units)
-Total elapsed time = 15.29s (DegenMoves)
+Root relaxation: objective 0.000000e+00, 540 iterations, 0.80 seconds (0.15 work units)
+Total elapsed time = 22.56s (DegenMoves)
+Total elapsed time = 25.25s (DegenMoves)
 
     Nodes    |    Current Node    |     Objective Bounds      |     Work
  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
 
-     0     0    0.00000    0  635          -    0.00000      -     -   20s
-H    0     0                    3552783.3415    0.00000   100%     -   20s
-H    0     0                    3550063.4360    0.00000   100%     -   21s
-     0     0    0.00000    0  615 3550063.44    0.00000   100%     -   24s
-     0     0    0.00000    0  577 3550063.44    0.00000   100%     -   29s
-     0     0    0.00000    0  556 3550063.44    0.00000   100%     -   45s
-     0     0    0.00000    0  550 3550063.44    0.00000   100%     -   47s
-     0     0    0.00000    0  589 3550063.44    0.00000   100%     -   52s
-     0     0    0.00000    0  587 3550063.44    0.00000   100%     -   54s
-     0     0    0.00000    0  568 3550063.44    0.00000   100%     -   66s
-H    0     0                    3518902.1776    0.00000   100%     -   67s
-     0     0    0.00000    0  570 3518902.18    0.00000   100%     -   68s
-     0     0    0.00000    0  569 3518902.18    0.00000   100%     -   72s
-     0     0    0.00000    0  569 3518902.18    0.00000   100%     -   84s
-H    0     0                    2385069.2708    0.00000   100%     -  149s
-     0     2    0.00000    0  569 2385069.27    0.00000   100%     -  155s
-    13    15    0.00000    7  558 2385069.27    0.00000   100%   3.8  160s
-    26    38    0.00000   12  547 2385069.27    0.00000   100%   2.4  169s
-    40    68    0.00000   17  542 2385069.27    0.00000   100%   4.0  177s
-    70   122    0.00000   28  538 2385069.27    0.00000   100%   7.5  194s
-   124   205    0.00000   54  541 2385069.27    0.00000   100%   6.0  218s
-   207   297    0.00000   87  541 2385069.27    0.00000   100%   6.2  248s
-   299   390    0.00000  127  518 2385069.27    0.00000   100%   8.9  270s
-   393   456    0.00000  164  501 2385069.27    0.00000   100%  12.1  661s
-   460   526    0.00000  180  501 2385069.27    0.00000   100%  11.6  712s
-   530   988    0.00000  197  496 2385069.27    0.00000   100%  13.1  796s
-  1004   996    0.00000  410  497 2385069.27    0.00000   100%  23.4  826s
-  1012  1295    0.00000  411  497 2385069.27    0.00000   100%  23.4  887s
-  1333  1572    0.00000  556  494 2385069.27    0.00000   100%  23.7  946s
-  1634  1830    0.00000  701  491 2385069.27    0.00000   100%  22.9 1001s
-  1939  2163    0.00000  795  488 2385069.27    0.00000   100%  21.3 1053s
-  2288  2521    0.00000  913  484 2385069.27    0.00000   100%  19.1 1133s
-  2652  2565    0.00000  996  484 2385069.27    0.00000   100%  17.6 1162s
-  2701  2870    0.00000 1009  483 2385069.27    0.00000   100%  17.5 1234s
-  3062  3235    0.00000 1145  482 2385069.27    0.00000   100%  16.5 1298s
-  3462  3595    0.00000 1313  482 2385069.27    0.00000   100%  15.3 1358s
-  3843  3596    0.00000  968 2190 2385069.27    0.00000   100%  14.1 1445s
-  3850  3601    0.00000   13  119 2385069.27    0.00000   100%  14.1 1450s
-H 3851  3420                    2379810.3338    0.00000   100%  14.1 1451s
-H 3851  3249                    24222.378565    0.00000   100%  14.1 1452s
-  3855  3252    0.00000 1368   76 24222.3786    0.00000   100%  14.1 1455s
-  3864  3258    0.00000  879    6 24222.3786    0.00000   100%  14.0 1461s
-H 3865  3099                       0.0000000    0.00000  0.00%  16.7 1462s
+     0     0    0.00000    0  618          -    0.00000      -     -   28s
+H    0     0                    2317743.6258    0.00000   100%     -   28s
+     0     0    0.00000    0  584 2317743.63    0.00000   100%     -   32s
+     0     0    0.00000    0  591 2317743.63    0.00000   100%     -   38s
+     0     0    0.00000    0  548 2317743.63    0.00000   100%     -   47s
+     0     0    0.00000    0  567 2317743.63    0.00000   100%     -   49s
+     0     0    0.00000    0  630 2317743.63    0.00000   100%     -   59s
+     0     0    0.00000    0  626 2317743.63    0.00000   100%     -   61s
+     0     0    0.00000    0  582 2317743.63    0.00000   100%     -   69s
+     0     0    0.00000    0  582 2317743.63    0.00000   100%     -   72s
+     0     0    0.00000    0  604 2317743.63    0.00000   100%     -   78s
+     0     0    0.00000    0  604 2317743.63    0.00000   100%     -   92s
+H    0     0                    7991.2430356    0.00000   100%     -  149s
+     0     2    0.00000    0  591 7991.24304    0.00000   100%     -  160s
+    15    23    0.00000    8  554 7991.24304    0.00000   100%  28.7  165s
+    22    33    0.00000   12  553 7991.24304    0.00000   100%  20.0  170s
+    32    63    0.00000   16  551 7991.24304    0.00000   100%  14.7  175s
+    62   124    0.00000   22  545 7991.24304    0.00000   100%  12.1  186s
+   123   216    0.00000   40  539 7991.24304    0.00000   100%   9.7  206s
+H  170   216                    7942.8291123    0.00000   100%   8.2  206s
+   216   314    0.00000   86  525 7942.82911    0.00000   100%   8.1  590s
+H  315   737                    7942.7011047    0.00000   100%   7.7  654s
+H  740  1034                    7942.7010692    0.00000   100%   8.3  686s
+  1039  1036    0.00000  498  498 7942.70107    0.00000   100%   7.5  705s
+  1041  1229    0.00000  499  498 7942.70107    0.00000   100%   7.5  730s
+  1234  1383    0.00000  592  498 7942.70107    0.00000   100%   6.6  757s
+  1391  1623    0.00000  705  498 7942.70107    0.00000   100%   6.6  789s
+  1631  1816    0.00000  839  498 7942.70107    0.00000   100%   5.9  814s
+  1824  2050    0.00000  955  498 7942.70107    0.00000   100%   5.5  847s
+  2058  2052    0.00000 1066  498 7942.70107    0.00000   100%   5.6  863s
+  2060  2258    0.00000 1067  498 7942.70107    0.00000   100%   5.6  888s
+  2274  2418    0.00000 1169  498 7942.70107    0.00000   100%   5.6  913s
+  2477  2457    0.00000 1268  499 7942.70107    0.00000   100%   6.3  934s
+  2555  2602 infeasible 1271      7942.70107    0.00000   100%   9.7  965s
+  2722  2710    0.00000  233  509 7942.70107    0.00000   100%  10.3  999s
+  2873  2842    0.00000  263  496 7942.70107    0.00000   100%  14.7 1054s
+  3021  2902    0.00000  305  499 7942.70107    0.00000   100%  17.7 1088s
+  3085  3094    0.00000  329  500 7942.70107    0.00000   100%  18.2 1138s
+  3303  3402    0.00000  387  499 7942.70107    0.00000   100%  19.5 1201s
+  3631  3403    0.00000  222 2194 7942.70107    0.00000   100%  18.9 1257s
+  3634  3405    0.00000 1126  133 7942.70107    0.00000   100%  18.9 1260s
+  3638  3408    0.00000  595   84 7942.70107    0.00000   100%  18.8 1266s
+  3653  3418    0.00000  216   30 7942.70107    0.00000   100%  18.8 1271s
+  3661  3426    0.00000   15  512 7942.70107    0.00000   100%  21.2 1275s
+  3755  3560    0.00000   29  500 7942.70107    0.00000   100%  20.9 1282s
+  3838  3613    0.00000   51  497 7942.70107    0.00000   100%  22.0 1285s
+H 4020  3446                       0.0000000    0.00000  0.00%  22.7 1289s
 
 Cutting planes:
-  Gomory: 17
+  Gomory: 14
   Implied bound: 1
-  MIR: 156
-  StrongCG: 11
-  Flow cover: 7
-  RLT: 2
+  MIR: 131
+  StrongCG: 22
+  RLT: 14
 
-Explored 3867 nodes (67359 simplex iterations) in 1462.85 seconds (536.57 work units)
+Explored 4132 nodes (97558 simplex iterations) in 1289.71 seconds (403.72 work units)
 Thread count was 2 (of 24 available processors)
 
-Solution count 7: 0 24222.4 2.37981e+06 ... 3.55278e+06
+Solution count 4: 0 7942.7 7991.24 2.31774e+06 
 
 Optimal solution found (tolerance 1.84e-08)
 Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
